@@ -1,0 +1,29 @@
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap";
+
+.user-panel img {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+
+.pagination-news{
+    font-size: 17px;
+}
+.pagination-news a, .pagination-news strong{
+    margin: 10px;
+    font-weight: bold;
+}
+.option-icon{
+    font-size: 13px;
+    margin: 5px;
+}
+body{
+    background-image: url('../../back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: mulish, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px
+}
