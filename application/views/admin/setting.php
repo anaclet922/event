@@ -198,7 +198,7 @@
               </div>
 
 
-              <div class="card card-warning">
+              <div class="card card-warning" style="display: none;">
                   <div class="card-header">
                     <h3 class="card-title">Flutterwave</h3>
                   </div>
