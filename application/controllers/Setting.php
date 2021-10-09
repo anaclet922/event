@@ -132,6 +132,7 @@ class Setting extends CI_Controller {
 
 		$this->db->set('value', $_POST['site_contact_email']);
 		$this->db->where('config_key', 'site_contact_email');
+		$this->db->update('tbl_config');
 
 		redirect($this->agent->referrer());
 	}
