@@ -45,25 +45,20 @@
 </nav>
 
 
-<nav class="navbar navbar-expand navbar-danger navbar-dark">
-	   
-    <a href="<?= base_url() ?>" class="brand-link">
+
+<nav class="navbar navbar-expand-lg navbar-danger navbar-dark">
+
+   <a href="<?= base_url() ?>" class="navbar-brand">
       <img src="<?= base_url() ?>assets/img/<?= webSettings()['logo'] ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light"><b><?= webSettings()['site_name'] ?></b></span>
     </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-    <!-- responsive menu button -->
-
-    <button id="toglemenubtn" class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fas fa-align-right" style=""></span>
-    </button>
-
-<div class="collapse navbar-collapse order-3" id="navbarCollapse">
-
-  <!-- Left navbar links -->
-  <ul class="navbar-nav">
-    <li class="nav-item d-none d-sm-inline-block">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
       <a href="<?= base_url() ?>" class="nav-link">Home</a>
     </li>
    <!--  <li class="nav-item d-none d-sm-inline-block">
@@ -71,23 +66,22 @@
     </li> -->
 
 
-    <li class="nav-item d-none d-sm-inline-block">
+    <li class="nav-item">
       <a href="<?= base_url('news') ?>" class="nav-link">News</a>
     </li>
 
     <?php if(pageVis()['contact'] == 1){ ?>
-    <li class="nav-item d-none d-sm-inline-block">
+    <li class="nav-item">
       <a href="<?= base_url() ?>page/contact" class="nav-link">Contact</a>
     </li>
     <?php } if(pageVis()['about'] == 1){ ?>
-    <li class="nav-item d-none d-sm-inline-block">
+    <li class="nav-item">
       <a href="<?= base_url() ?>page/view/about" class="nav-link">About</a>
     </li>
     <?php } ?>
-  </ul>
-
-  <!-- SEARCH FORM -->
-  <form class="form-inline ml-3">
+    </ul>
+    <!-- SEARCH FORM -->
+  <!-- <form class="form-inline ml-3">
     <div class="input-group input-group-sm">
       <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
       <div class="input-group-append">
@@ -96,10 +90,9 @@
         </button>
       </div>
     </div>
-  </form>
+  </form> -->
 
-
-    <ul class="navbar-nav ml-auto">
+   <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class= "nav-link" href="<?= base_url() ?>register">
           <!-- <i class="fas fa-user-plus"></i>  -->
@@ -114,11 +107,8 @@
       </li>
     </ul>
 
-
-
   </div>
 </nav>
-
 
 
 
